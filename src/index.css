@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Mobile responsiveness overrides */
+@media (max-width: 640px) {
+  .sm\:hidden {
+    display: none;
+  }
+  
+  /* Make sure buttons stack properly on mobile */
+  .mt-3.sm\:mt-0.sm\:ml-3 {
+    margin-top: 0.75rem;
+  }
+  
+  /* Ensure proper spacing for feature items on mobile */
+  .flex-shrink-0 + div {
+    margin-left: 1rem;
+  }
+  
+  /* Improve form layout on mobile */
+  .sm\:flex {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sm\:flex > .mt-3 {
+    margin-top: 0.75rem;
+  }
+}
+
+/* Tablet responsiveness */
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* Ensure hero image displays properly */
+  .lg\:absolute {
+    position: relative;
+  }
+  
+  .lg\:w-1\/2 {
+    width: 100%;
+  }
+  
+  /* Adjust CTA section for tablets */
+  .lg\:flex {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .lg\:flex > div {
+    margin-top: 1.5rem;
+  }
+}
