@@ -9,15 +9,7 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyAaA0hgz6DQCaLPVlUKa0KuHIG1BHW2Tmw",
-  authDomain: "hosthive-apps-dev.firebaseapp.com", //process.env.REACT_FIREBASE_AUTH_DOMAIN,
-  projectId: "teambnb-dev",
-  storageBucket: "teambnb-dev.appspot.com",
-  messagingSenderId: "14016993156",
-  appId: "1:14016993156:web:d5ed75597d84e7cc11afd1",
-  measurementId: "G-LWXHEEJC2H",
-};
+const firebaseConfig = {};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
